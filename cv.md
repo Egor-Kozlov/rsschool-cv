@@ -25,3 +25,9 @@ I also already have experience in the IT: I worked as a QA engineer
  I worked as a QA engineer, and now I have completed courses on front-end development (TeachMeSkills)
  ## Education:
  I graduated from the Law Faculty of the Belarusian State University
+ ## Languages:
+ 
+ - English - A2+
+ - Franch - B1
+ - Polish - B1
+ - Russian - native
