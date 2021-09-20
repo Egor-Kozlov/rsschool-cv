@@ -361,7 +361,7 @@ textarea {
   font-family: 'Inter', sans-serif;
 }
 
-.aside-list .picture {
+.picture {
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 30px;
@@ -538,9 +538,9 @@ body {
   margin-bottom: 15px;
 }
 
-.language-javascript {
-  font-size: 20px;
-  color: black;
+.hljs {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .footer {
@@ -638,10 +638,5 @@ body {
     align-items: center;
     justify-content: space-around;
   }
-}
-
-.hljs {
-  font-size: 13px;
-  line-height: 16px;
 }
 /*# sourceMappingURL=main.css.map */
