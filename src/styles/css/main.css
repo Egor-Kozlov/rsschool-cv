@@ -361,21 +361,9 @@ textarea {
   font-family: 'Inter', sans-serif;
 }
 
-.list {
-  padding-bottom: 15px;
-}
-
-.aside-item {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  margin-left: 30px;
-  border-bottom: 1px solid white;
-}
-
-.aside-item .picture {
-  margin-left: 34px;
+.aside-list .picture {
+  margin: 0 auto;
+  margin-top: 60px;
   margin-bottom: 30px;
   width: 190px;
   height: 190px;
@@ -387,6 +375,19 @@ textarea {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.list {
+  padding-bottom: 15px;
+}
+
+.aside-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  border-bottom: 1px solid white;
 }
 
 .aside-item .list--skills {
@@ -460,11 +461,9 @@ textarea {
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 900px;
 }
 
 .container {
@@ -473,7 +472,7 @@ body {
 }
 
 .page-container {
-  width: 1024px;
+  max-width: 1024px;
   margin: 50px;
   background: #174180;
   border-radius: 30px;
@@ -512,6 +511,7 @@ body {
 
 .main .section {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .main .section .section__text, .main .section .section__item {
@@ -538,9 +538,14 @@ body {
   margin-bottom: 15px;
 }
 
+.language-javascript {
+  font-size: 20px;
+  color: black;
+}
+
 .footer {
   width: 100%;
-  height: 75px;
+  min-height: 75px;
   padding: 0px 70px;
   background: gray;
   display: flex;
@@ -583,5 +588,60 @@ body {
 
 .footer .rs-school-logo-container p {
   font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .hljs {
+    width: calc(100vw * 0.92);
+  }
+  .container {
+    flex-direction: column;
+  }
+  .page-container {
+    height: 100%;
+    margin: 0px;
+    border-radius: 0%;
+  }
+  .aside-list {
+    width: 100%;
+  }
+  .aside--bio {
+    margin: 60px 0px 30px 30px;
+    padding-right: 30px;
+    align-items: center;
+  }
+  .main {
+    width: 100%;
+    border-radius: 0%;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+  .footer {
+    border-radius: 0%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aside-item {
+    margin-left: 15px;
+  }
+  .main {
+    padding: 15px;
+  }
+  .footer {
+    height: 100px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.hljs {
+  font-size: 13px;
+  line-height: 16px;
 }
 /*# sourceMappingURL=main.css.map */

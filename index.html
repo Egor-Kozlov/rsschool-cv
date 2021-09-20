@@ -11,14 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/css/main.css">
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <!-- connect highlight code libery -->
 </head>
 
 <body>
     <div class="page-container">
         <div class="container">
             <aside class="aside-list">
+                <div class="picture"></div>
                 <div class="aside-item aside--bio">
-                    <div class="picture"></div>
                     <ul class="links-list">
                         <li class="links__item">
                             <img class="links__icon" src="./src/img/icons/linkedin_icon.svg" alt="linkedin_icon">
@@ -134,6 +136,22 @@
                         <p class="section__text">Years: 2015 - 2019</p>
                         <p class="section__text">Specialization: Economic Law</p>
                 </section>
+                <section class="section">
+                    <h3 class="section__title">Example code</h3>
+                    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(43, 43, 43); color: rgb(186, 186, 186);"><span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> onSortingChange = (field) =&gt; {
+                        <span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> order = field === sortingField &amp;&amp; sortingOrder === <span class="hljs-string" style="color: rgb(224, 196, 108);">"asc"</span> ? <span class="hljs-string" style="color: rgb(224, 196, 108);">"desc"</span> : <span class="hljs-string" style="color: rgb(224, 196, 108);">"asc"</span>;
+                        setsortingField(field);
+                        setsortingOrder(order);
+                        <span class="hljs-keyword" style="color: rgb(203, 120, 50);">let</span> sortedArray = [];
+                        <span class="hljs-keyword" style="color: rgb(203, 120, 50);">if</span> (order === <span class="hljs-string" style="color: rgb(224, 196, 108);">"asc"</span>) {
+                            sortedArray = sortElementAsc(visibleList, field);
+                        }
+                        <span class="hljs-keyword" style="color: rgb(203, 120, 50);">if</span> (order === <span class="hljs-string" style="color: rgb(224, 196, 108);">"desc"</span>) {
+                            sortedArray = sortElementDesc(visibleList, field);
+                        }
+                        setvisibleList(sortedArray);
+                    }</pre>
+                </section>
             </main>
         </div>
         <footer class="footer">
@@ -143,7 +161,7 @@
             </div>
             <div class="rs-school-logo-container">
                 <a href="https://rs.school/js/"><img class="rs-school-logo" src="./src/img/icons/rs_school_js.svg" alt="rs_school_js"></a>
-                <p>&#169 2021</p>
+                <p>&#169; 2021</p>
             </div>
         </footer>
     </div>

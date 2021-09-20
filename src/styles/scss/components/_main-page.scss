@@ -6,12 +6,10 @@
 }
 
 body {
-    min-height: 100vh;
+    // min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 900px
-
 }
 
 .container {
@@ -20,7 +18,7 @@ body {
 }
 
 .page-container {
-    width: 1024px;
+    max-width: 1024px;
     margin: 50px;
  
     background: #174180;
@@ -61,6 +59,7 @@ body {
     .section {
 
         margin-bottom: 30px;
+        width: 100%;
 
         .section__text, .section__item {
             margin-left: 18px;
@@ -87,4 +86,9 @@ body {
         }
     }
 
+}
+
+.language-javascript {
+    font-size: 20px;
+    color: black;
 }
