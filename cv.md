@@ -30,4 +30,4 @@ I also already have experience in the IT: I worked as a QA engineer
  - English - A2+
  - Franch - B1
  - Polish - B1
- 
+ - Russian - native
