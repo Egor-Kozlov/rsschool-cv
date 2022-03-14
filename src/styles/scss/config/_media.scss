@@ -56,3 +56,9 @@
         justify-content: space-around;
     }
 }
+
+@media screen and (max-width: 670px) {
+    .projects__list {
+        justify-content: center;
+    }
+}

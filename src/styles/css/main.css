@@ -362,13 +362,13 @@ textarea {
 }
 
 .picture {
+  display: block;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 30px;
   width: 190px;
   height: 190px;
-  background: url(../../img/kozlov_egor.jpg) no-repeat center;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 50%;
   border: solid 3px white;
   -webkit-border-radius: 50%;
@@ -417,11 +417,13 @@ textarea {
 .aside-item .aside-item__title {
   font-size: 24px;
   margin-bottom: 30px;
+  color: white;
 }
 
 .aside-item .list__item {
   margin-bottom: 5px;
   list-style: none;
+  color: white;
 }
 
 .aside-item .list__item .list__subtitle {
@@ -429,6 +431,7 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  color: white;
 }
 
 .aside-item .list__item .list__description {
@@ -454,9 +457,7 @@ textarea {
 }
 
 * {
-  font-family: 'Inter', sans-serif;
-  color: white;
-  font-size: 10px;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -514,13 +515,15 @@ body {
   width: 100%;
 }
 
-.main .section .section__text, .main .section .section__item {
+.main .section .section__text,
+.main .section .section__item {
   margin-left: 18px;
+  padding-right: 5px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 .main .section .section__item {
@@ -538,9 +541,52 @@ body {
   margin-bottom: 15px;
 }
 
-.hljs {
-  font-size: 14px;
-  line-height: 16px;
+.main .projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.main .projects__list .project__item {
+  background: yellowgreen;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.main .projects__list .project__item:hover {
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main .projects__list .project__item--transactions-table {
+  background: url(../../img/projects-backgrounds/transactions-table.png) 0 0/100% 100% no-repeat;
+}
+
+.main .projects__list .project__item--museum {
+  background: url(../../img/projects-backgrounds/museum.png) 0 0/100% 100% no-repeat;
+}
+
+.main .projects__list .project__item--leverx {
+  background: url(../../img/projects-backgrounds/leverx.png) 0 0/100% 100% no-repeat;
+}
+
+.main .projects__list .project__item--konstruct {
+  background: url(../../img/projects-backgrounds/konstruct.png) 0 0/100% 100% no-repeat;
+}
+
+.main .projects__list .project__item--counries-table {
+  background: url(../../img/projects-backgrounds/counries-table.png) 0 0/100% 100% no-repeat;
+}
+
+.main .projects__list .project__item--calculator {
+  background: url(../../img/projects-backgrounds/calculator.png) 0 0/100% 100% no-repeat;
+}
+
+.main .projects__list .project__item .project__link {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -571,6 +617,7 @@ body {
 }
 
 .footer .github-container .github-link {
+  color: white;
   text-decoration: none;
 }
 
@@ -588,6 +635,7 @@ body {
 
 .footer .rs-school-logo-container p {
   font-family: 'Inter', sans-serif;
+  color: white;
 }
 
 @media screen and (max-width: 900px) {
@@ -637,6 +685,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .projects__list {
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
